@@ -1,0 +1,252 @@
+/*
+* Style Name: Cotton Candy
+* Style URI: http://
+* Author: Neil Murray
+* Author URI: http://cf7skins.com
+* Description:  Cotton Candy is a bright, eye-catching style that will stand out on your page with its bright and vibrant colors. This is a good style for any forms that need to stand out.
+* Instructions:
+* Version: 0.04
+* Version Date: 2015-02-28
+* License: GNU General Public License v2 or later
+* License URI: http://www.gnu.org/licenses/gpl-2.0.html
+* Tags: aqua, pink, white, light
+*/
+
+/** Table of Contents
+* Import
+* Resets
+* Form & Controls
+* Fieldset, Legend, Label
+* Text Fields
+* Ordered & Unordered lists
+* Checkboxes, Radio Buttons and Drop Down Menus
+* Other Fields
+* Submit Buttons
+* Special Classes
+* Ready Styles
+*/
+
+/** Import
+NOTE: Use to import other style sheets before setting cf7s defaults
+------------------------------------------------------------ */
+/* @import url('../parent/style.css'); */
+
+/** Resets
+NOTE: These items should be used to reset standard HTML elements within CF7 forms
+------------------------------------------------------------ */
+.wpcf7 .cf7s-cotton-candy p {
+}
+
+.wpcf7 .cf7s-cotton-candy em {
+}
+
+.wpcf7 .cf7s-cotton-candy a {
+}
+
+/** Form & Controls
+NOTE: These items should be used to style the overall CF7 Form
+------------------------------------------------------------ */
+.wpcf7 .cf7s-cotton-candy {
+	padding: 20px;
+	border: 1px solid #9ffffe;
+	background: #fff;
+	color: #158c8a;
+}
+
+/** Fieldset, Legend, Label
+NOTE: These items should be used to style these elements within CF7 forms
+------------------------------------------------------------ */
+.wpcf7 .cf7s-cotton-candy fieldset {
+	margin: 10px 0;
+	padding: 10px 20px;
+	border: 1px solid #9ffffe;
+	background: #e7ffff;
+}
+
+.wpcf7 .cf7s-cotton-candy legend {
+	font-size: 1.2em;
+	padding: 3px 20px;
+	color: #fff;
+	border: 1px solid #9ffffe;
+	background: #90ebec;
+}
+
+.wpcf7 .cf7s-cotton-candy label {
+}
+
+.wpcf7 .cf7s-cotton-candy fieldset p {
+}
+
+.wpcf7 .cf7s-cotton-candy fieldset fieldset {
+    border: 1px solid #e9aefe;
+	background: #f4d8ff;
+}
+
+.wpcf7 .cf7s-cotton-candy fieldset fieldset legend {
+	border: 1px solid #e9aefe;
+	background: #e79aff;
+}
+
+.wpcf7 .cf7s-cotton-candy fieldset fieldset input, 
+.wpcf7 .cf7s-cotton-candy fieldset fieldset textarea {
+	border: 1px solid #f0b8ff;
+	background: #fff;
+}
+
+.wpcf7 .cf7s-cotton-candy fieldset fieldset select {
+	border: 1px solid #f0b8ff;
+}
+
+/** Text Fields
+NOTE: Use these CSS selectors to style these elements within CF7 forms
+------------------------------------------------------------ */
+.wpcf7 .cf7s-cotton-candy input,
+.wpcf7 .cf7s-cotton-candy textarea {
+	margin-bottom: 8px;
+	padding: 7px;
+	border: 1px solid #9ffffe;
+	background: #fff;
+	color: #999;
+}
+
+.wpcf7 .cf7s-cotton-candy input[type="text"],
+.wpcf7 .cf7s-cotton-candy input[type="email"],
+.wpcf7 .cf7s-cotton-candy input[type="tel"],
+.wpcf7 .cf7s-cotton-candy input[type="url"],
+.wpcf7 .cf7s-cotton-candy input[type="number"],
+.wpcf7 .cf7s-cotton-candy input[type="range"],
+.wpcf7 .cf7s-cotton-candy input[type=date],
+.wpcf7 .cf7s-cotton-candy input[type=file] {
+/*		width: 100%;  Added to cf7s-default */
+}
+
+.wpcf7 .cf7s-cotton-candy input[type="text"] {
+}
+
+.wpcf7 .cf7s-cotton-candy input[type="email"] {
+}
+
+.wpcf7 .cf7s-cotton-candy input[type="tel"] {
+}
+
+.wpcf7 .cf7s-cotton-candy textarea {
+/*		width: 100%;  Added to cf7s-default */
+	padding: 5px 7px;  /* deliberately different from Input */
+}
+
+/** Ordered & Unordered lists
+NOTE: Use these CSS selectors to style these elements within CF7 forms
+------------------------------------------------------------ */
+.wpcf7 .cf7s-cotton-candy ol,
+.wpcf7 .cf7s-cotton-candy ul,
+.wpcf7 .cf7s-cotton-candy li {
+}
+
+.wpcf7 .cf7s-cotton-candy ol {
+}
+
+.wpcf7 .cf7s-cotton-candy li {
+	margin-bottom: 5px;
+}
+
+.wpcf7 .cf7s-cotton-candy li label {
+}
+
+.wpcf7 .cf7s-cotton-candy .wpcf7-list-item {
+}
+
+.wpcf7 .cf7s-cotton-candy .wpcf7-list-item-label {
+	margin-right: 7px;  /* adds space after Radio Button labels */
+}
+
+/** Checkboxes, Radio Buttons and Drop Down Menus
+NOTE: Use these CSS selectors to style these elements within CF7 forms
+------------------------------------------------------------ */
+.wpcf7 .cf7s-cotton-candy input[type="checkbox"],
+.wpcf7 .cf7s-cotton-candy input[type="radio"] {
+	margin-right: 6px;
+	border: none;
+	background: none;  /* needed for IE - cf7s-default is not specific enough */
+}
+
+.wpcf7 .cf7s-cotton-candy select {
+	margin-bottom: 8px;
+	margin-left: 0; /* same as Input */
+	padding: 5px;
+	border: 1px solid #9ffffe;
+}
+
+.wpcf7 .cf7s-cotton-candy select option{
+}
+
+.wpcf7 .cf7s-cotton-candy select option:hover{
+	background: #f4d8ff;
+}
+
+.wpcf7 .cf7s-cotton-candy .wpcf7-checkbox .wpcf7-list-item,
+.wpcf7 .cf7s-cotton-candy .wpcf7-radio .wpcf7-list-item {
+	margin-left: 13px;
+}
+
+/** Other Fields
+NOTE: Use these CSS selectors to style these elements within CF7 forms
+------------------------------------------------------------ */
+
+
+/** Submit Buttons
+NOTE: Use these CSS selectors to style these elements within CF7 forms
+------------------------------------------------------------ */
+.wpcf7 .cf7s-cotton-candy input[type="submit"] {
+	padding: 5px 15px;
+	background: #91ebeb;
+	border: 1px solid #6ccbcb;
+	color: #fff;
+}
+
+.wpcf7 .cf7s-cotton-candy input[type="submit"]:hover {
+	background: #e59bff;
+}
+
+/** Special Classes
+NOTE: Special Classes are classes added in the CF7 Form HTML for a particular form 
+------------------------------------------------------------ */
+
+
+/** Ready Styles
+NOTE: Ready Styles are provided ready to be used in all CF7 forms
+------------------------------------------------------------ */
+.wpcf7 .cf7s-cotton-candy .singleline {
+}
+
+.wpcf7 .cf7s-cotton-candy .singleline li {
+    display: inline-block;
+    margin: 0 2% 0 0;
+    width: 47%;  /* CHANGE TO CALC */
+}
+
+.wpcf7 .cf7s-cotton-candy .singleline input {
+}
+
+.wpcf7 .cf7s-cotton-candy .checkbox-horizontal,
+.wpcf7 .cf7s-cotton-candy .radio-horizontal {
+}
+
+.wpcf7 .cf7s-cotton-candy .boxaround {
+	padding: 10px;
+	border: 1px solid #eaafff;
+	background: #f4d8ff;
+}
+
+.wpcf7 .cf7s-cotton-candy .boxaround1 {
+	padding: 10px;
+	border: 1px solid #eaafff;
+	background: #f4d8ff;
+}
+
+.wpcf7 .cf7s-cotton-candy .boxaround select {
+	border: 1px solid #f0b8ff;
+}
+
+.wpcf7 .cf7s-cotton-candy .boxaround1 select {
+	border: 1px solid #f0b8ff;
+}
