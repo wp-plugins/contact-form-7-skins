@@ -2,7 +2,7 @@
 Contributors: buzztone
 Tags: contact form 7, form, skin, template, style, html, css
 Requires at least: 4.0
-Tested up to: 4.1
+Tested up to: 4.2
 Stable tag: 1.0
 Author URI: http://cf7skins.com
 License: GPLv2 or later
