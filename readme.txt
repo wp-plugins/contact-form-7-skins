@@ -3,44 +3,43 @@ Contributors: buzztone
 Tags: contact form 7, form, skin, template, style, html, css
 Requires at least: 4.0
 Tested up to: 4.2
-Stable tag: 1.0
+Stable tag: 1.0.1
 Author URI: http://cf7skins.com
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Makes styling of Contact Form 7 forms easy – even if you don’t have HTML + CSS skills.
+Makes styling of Contact Form 7 forms much easier – even if you don’t have HTML + CSS skills.
 
-== Description ==
+== Description == 
 
-Contact Form 7 is one of the most popular WordPress plugins ever. It is used by millions of websites around the world. Creating a basic contact form with Contact Form 7 is quite simple. But creating complex forms with many fields, and getting them to look how you want, can be difficult for many WordPress users. 
+[CF7 Skins](http://cf7skins.com/) works right within the normal Contact Form 7 interface, making it easier for regular WordPress users to create professional looking Contact Form 7 forms using a range of compatible **Templates** and **Styles**.
 
-Experienced WordPress users, skilled at using HTML and CSS, are able to style their Contact Form 7 forms to their particular requirements, but this requires a level of skill beyond many WordPress users.
+Simply select from a list of compatible Templates that cover many common forms and then choose a Style for your form from a range of professional and beautiful Styles. 
 
-This is where CF7 Skins comes in. It works right inside the normal Contact Form 7 interface to extend its capabilities, making it easier for regular WordPress users to create forms using built in Templates and Styles.
+Each Template acts as an easy to follow guide, which can be adapted to your particular requirements. Every Style covers the full range of Contact Form 7 form elements.
 
-Simply select a Template from a list of available templates and then choose a Style for your form from a range of professional and beautiful styles.
-
-CF7 Skins is highly customizable and easy to use even for beginners.
-
-Plus you can do all this and more without HTML and CSS skills. 
+CF7 Skins is highly customizable and easy to learn, even for beginners. CF7 Skins makes building and styling Contact Form 7 forms much easier - even if you don't have HTML and CSS skills.
 
 = CF7 Skins Features =
 
 Here are some of the things you can do with CF7 Skins: 
 
 1. Create a vast range of simple and complex forms using Contact Form 7. 
-1. Choose from a list of built-in and ready to use Templates. 
-1. You can easily edit built in Templates to add, remove or modify form fields. 
-1. Choose from multiple Styles to create professional looking forms. 
-1. Work right within the normal Contact Form 7 plugin interface. 
+1. Select from a list of built-in and ready to use Templates. 
+1. Easily edit built-in Templates to add, remove or modify form fields. 
+1. Choose from a range of compatible Contact Form 7 from Styles. 
+1. Works right within the normal Contact Form 7 plugin interface. 
 1. Build professional looking Contact Form 7 forms without HTML and CSS knowledge. 
 
-With the premium version of the plugin [CF7 Skins Pro](http://cf7skins.com/pro-version/) you get:
+[Read more about CF7 Skins](http://cf7skins.com/).
+
+= Pro Version Available =
+With the Pro version of the plugin [CF7 Skins Pro](http://cf7skins.com/pro-version/) you get:
 
 * Additional Templates and Styles to use with your forms. 
-* Access to priority email support by paid support staff. 
+* Access to [premium email support](http://cf7skins.com/support/#premium-email-support) by paid support staff. 
 
-See: [Plugin Website](http://www.cf7skins.com) | [Documentation](http://docs.cf7skins.com/) | [FAQs](http://kb.cf7skins.com/faq/) | [Pro Version](http://cf7skins.com/pro-version/)
+See: [Plugin Website](http://cf7skins.com/) | [Documentation](http://docs.cf7skins.com/) | [FAQs](http://kb.cf7skins.com/faq/) | [Pro Version](http://cf7skins.com/pro-version/)
 
 == Installation ==
 
@@ -62,19 +61,19 @@ Having trouble? Learn more about how to install plugins on [WordPress Codex](htt
 
 = What is CF7 Skins? =
 
-CF7 Skins is an add-on plugin for the Contact Form 7 plugin. It extends the functionality of Contact Form 7 plugin by adding ready to use Templates and Styles to it. This allows even non-expert users to create complex Contact Form 7 forms with no HTML or CSS skills. You can learn more about by visiting [cf7skins.com](http://www.cf7skins.com)
+CF7 Skins is an add-on plugin for the Contact Form 7 plugin. It extends the functionality of Contact Form 7 by adding ready to use Templates and Styles to it. You can learn more by visiting [cf7skins.com](http://cf7skins.com/)
 
-= Can I customize CF7 Skins Templates on my own? =
+= Is there Documentation available? = 
 
-Yes, you can. See how to [edit CF7 Skins Templates](http://kb.cf7skins.com/edit-your-cf7-skins-form/). 
+Yes, our in-depth [Documentation](http://docs.cf7skins.com/) is a great place to find detailed answers. It covers how to get started, how to customize your forms with CF7 Skins and everything else in between.
 
-= Can I modify CF7 Skins Styles? = 
+= How do I get started? =
 
-Yes, please see how to [modify CF7 Skins Styles](http://docs.cf7skins.com/#customizing-cf7-skins-forms-1386). 
+There is a range of [Tutorials](http://kb.cf7skins.com/category/tutorials/) available to help you get started using CF7 Skins. 
 
 = How do I get more Templates and Styles for CF7 Skins? =
 
-You can get more templates and styles with the [pro version](http://cf7skins.com/pro-version/) of the plugin. 
+You can get more templates and styles with the [Pro Version](http://cf7skins.com/pro-version/) of the plugin. The Pro Version also includes access to [premium email support](http://cf7skins.com/support/#premium-email-support) by paid support staff. 
 
 = Where can I find answers to Frequently Asked Questions? =
 Many questions have been answered on the [CF7 Skins FAQ](http://kb.cf7skins.com/faq/) on the plugin website.
@@ -91,9 +90,13 @@ Many questions have been answered on the [CF7 Skins FAQ](http://kb.cf7skins.com/
 4. CF7 Skins comes with many beautiful Styles for your forms.
 5. Detailed view of a Template.
 6. Detailed view of a Style. 
-7. Completed CF7 Skins Form. 
+7. Completed CF7 Skins Form.
 
 == Changelog ==
+
+= 1.0.1 - 2015-05-06 =
+
+* FIX: Default CSS was overriding input & textarea Styles
 
 = 1.0 - 2015-04-01 =
 

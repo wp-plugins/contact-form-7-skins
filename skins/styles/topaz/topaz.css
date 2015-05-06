@@ -5,8 +5,8 @@
 * Author URI: http://cf7skins.com
 * Description: Topaz is a smart orange style, with subtle color variations, that will work well with themes that follow a similar color scheme.
 * Instructions:
-* Version: 0.04
-* Version Date: 2015-02-28
+* Instructions:
+* Version: 1.01
 * License: GNU General Public License v2 or later
 * License URI: http://www.gnu.org/licenses/gpl-2.0.html
 * Tags: yellow, orange, white, light
@@ -27,7 +27,7 @@
 */
 
 /** Import
-NOTE: Use to import other style sheets before setting cf7s defaults
+NOTE: Use to import other style sheets
 ------------------------------------------------------------ */
 /* @import url('../parent/style.css'); */
 
@@ -44,7 +44,7 @@ NOTE: These are used to reset standard HTML form elements within CF7 forms
 }
 
 /** Form & Controls
-NOTE: These items should be used style the overall Form within CF7 forms
+NOTE: These items should be used to style the overall CF7 form
 ------------------------------------------------------------ */
 .wpcf7 .cf7s-topaz {
 	padding: 20px;
@@ -54,7 +54,6 @@ NOTE: These items should be used style the overall Form within CF7 forms
 }
 
 /** Fieldset, Legend, Label
-NOTE: These items should be used to style these elements within CF7 forms
 ------------------------------------------------------------ */
 .wpcf7 .cf7s-topaz fieldset {
 	margin: 10px 0;
@@ -78,6 +77,7 @@ NOTE: These items should be used to style these elements within CF7 forms
 }
 
 .wpcf7 .cf7s-topaz fieldset fieldset {
+		margin: 10px 0; /* Above CSS overwritten by cf7s-default */
 }
 
 .wpcf7 .cf7s-topaz fieldset fieldset legend {
@@ -88,10 +88,9 @@ NOTE: These items should be used to style these elements within CF7 forms
 }
 
 /** Text Fields
-NOTE: These are the CSS selectors that should be used style these fields within CF7 forms
 ------------------------------------------------------------ */
-.wpcf7 .cf7s-topaz input,
-.wpcf7 .cf7s-topaz textarea {
+.wpcf7 .wpcf7-form.cf7skins.cf7s-topaz input,
+.wpcf7 .wpcf7-form.cf7skins.cf7s-topaz textarea {
 	margin-bottom: 8px;
 	padding: 7px;
 	color: #d17534;
@@ -107,7 +106,6 @@ NOTE: These are the CSS selectors that should be used style these fields within 
 .wpcf7 .cf7s-topaz input[type="range"],
 .wpcf7 .cf7s-topaz input[type=date],
 .wpcf7 .cf7s-topaz input[type=file] {
-/*		width: 100%;  Added to cf7s-default */
 }
 
 .wpcf7 .cf7s-topaz input[type="text"] {
@@ -120,12 +118,10 @@ NOTE: These are the CSS selectors that should be used style these fields within 
 }
 
 .wpcf7 .cf7s-topaz textarea {
-/*		width: 100%;  Added to cf7s-default */
 	padding: 5px 7px;  /* deliberately different from Input */
 }
 
 /** Ordered & Unordered lists
-NOTE: These are the CSS selectors that should be used style these fields within CF7 forms
 ------------------------------------------------------------ */
 .wpcf7 .cf7s-topaz ol,
 .wpcf7 .cf7s-topaz ul,
@@ -146,17 +142,16 @@ NOTE: These are the CSS selectors that should be used style these fields within 
 }
 
 .wpcf7 .cf7s-topaz .wpcf7-list-item-label {
-	margin-right: 7px;  /* adds space after Radio Button labels */
+	margin-right: 7px;
 }
 
 /** Checkboxes, Radio Buttons and Drop Down Menus
-NOTE: These are the CSS selectors that should be used style these Fields within CF7 forms
 ------------------------------------------------------------ */
-.wpcf7 .cf7s-topaz input[type="checkbox"],
-.wpcf7 .cf7s-topaz input[type="radio"] {
+.wpcf7 .wpcf7-form.cf7skins.cf7s-topaz input[type="checkbox"],
+.wpcf7 .wpcf7-form.cf7skins.cf7s-topaz input[type="radio"] {
 	margin-right: 6px;
 	border: none;
-	background: none;  /* needed for IE - cf7s-default is not specific enough */
+	background: none;
 }
 
 .wpcf7 .cf7s-topaz select {
@@ -180,21 +175,21 @@ NOTE: These are the CSS selectors that should be used style these Fields within 
 }
 
 /** Other Fields
-NOTE: These are the CSS selectors that should be used style these fields within CF7 forms
+NOTE: Use these CSS selectors to style these elements within CF7 forms
 ------------------------------------------------------------ */
 
 
 /** Submit Buttons
-NOTE: These are the CSS selectors that should be used style Submit Buttons within CF7 forms
+NOTE: These are the CSS selectors that should be used to style Submit Buttons within CF7 forms
 ------------------------------------------------------------ */
-.wpcf7 .cf7s-topaz input[type="submit"] {
+.wpcf7 .wpcf7-form.cf7skins.cf7s-topaz input[type="submit"] {
 	padding: 5px 15px;
 	color: #fff;
 	border: 1px solid #e0bf7a;
 	background: #d88249;
 }
 
-.wpcf7 .cf7s-topaz input[type="submit"]:hover {
+.wpcf7 .wpcf7-form.cf7skins.cf7s-topaz input[type="submit"]:hover {
 	color: #d17437;
 	background: #f6d896;
 }

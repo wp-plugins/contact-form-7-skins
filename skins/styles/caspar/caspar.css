@@ -5,8 +5,8 @@
 * Author URI: http://cf7skins.com
 * Description: Caspar is a simple monochromatic theme with the ability to blend in with most white or grayscale themes. It is incredibly simple yet effective.
 * Instructions:
-* Version: 0.04
-* Version Date: 2015-02-25
+* Version: 1.01
+* Version Date: 2015-05-01
 * License: GNU General Public License v2 or later
 * License URI: http://www.gnu.org/licenses/gpl-2.0.html
 * Tags: white, gray, black, light
@@ -27,7 +27,7 @@
 */
 
 /** Import
-NOTE: Use to import other style sheets before setting cf7s defaults
+NOTE: Use to import other style sheets
 ------------------------------------------------------------ */
 /* @import url('../parent/style.css'); */
 
@@ -54,7 +54,6 @@ NOTE: These items should be used style the overall CF7 form
 }
 
 /** Fieldset, Legend, Label
-NOTE: These items should be used to style these elements within CF7 forms
 ------------------------------------------------------------ */
 .wpcf7 .cf7s-caspar fieldset {
 	margin: 10px 0;
@@ -78,6 +77,7 @@ NOTE: These items should be used to style these elements within CF7 forms
 }
 
 .wpcf7 .cf7s-caspar fieldset fieldset {
+		margin: 10px 0; /* Above CSS overwritten by cf7s-default */
 }
 
 .wpcf7 .cf7s-caspar fieldset fieldset legend {
@@ -88,10 +88,9 @@ NOTE: These items should be used to style these elements within CF7 forms
 }
 
 /** Text Fields
-NOTE: Use these CSS selectors to style these elements within CF7 forms
 ------------------------------------------------------------ */
-.wpcf7 .cf7s-caspar input,
-.wpcf7 .cf7s-caspar textarea {
+.wpcf7 .wpcf7-form.cf7skins.cf7s-caspar input,
+.wpcf7 .wpcf7-form.cf7skins.cf7s-caspar textarea {
 	margin-bottom: 8px;
 	padding: 7px;
 	border: 1px solid #c3c3c3;
@@ -105,8 +104,7 @@ NOTE: Use these CSS selectors to style these elements within CF7 forms
 .wpcf7 .cf7s-caspar input[type="number"],
 .wpcf7 .cf7s-caspar input[type="range"],
 .wpcf7 .cf7s-caspar input[type=date],
-.wpcf7 .cf7s-caspar input[type=file] {
-/*		width: 100%;  Added to cf7s-default */	
+.wpcf7 .cf7s-caspar input[type=file] {	
 }
 
 .wpcf7 .cf7s-caspar input[type="text"] {
@@ -119,12 +117,10 @@ NOTE: Use these CSS selectors to style these elements within CF7 forms
 }
 
 .wpcf7 .cf7s-caspar textarea {
-/*		width: 100%;  Added to cf7s-default */
 	padding: 5px 7px;  /* deliberately different from Input */
 }
 
 /** Ordered & Unordered lists
-NOTE: Use these CSS selectors to style these elements within CF7 forms
 ------------------------------------------------------------ */
 .wpcf7 .cf7s-caspar ol,
 .wpcf7 .cf7s-caspar ul,
@@ -149,13 +145,12 @@ NOTE: Use these CSS selectors to style these elements within CF7 forms
 }
 
 /** Checkboxes, Radio Buttons and Drop Down Menus
-NOTE: Use these CSS selectors to style these elements within CF7 forms
 ------------------------------------------------------------ */
-.wpcf7 .cf7s-caspar input[type="checkbox"],
-.wpcf7 .cf7s-caspar input[type="radio"] {
+.wpcf7 .wpcf7-form.cf7skins.cf7s-caspar input[type="checkbox"],
+.wpcf7 .wpcf7-form.cf7skins.cf7s-caspar input[type="radio"] {
 	margin-right: 6px;
 	border: none;
-	background: none;  /* needed for IE - cf7s-default is not specific enough */
+	background: none;
 }
 
 .wpcf7 .cf7s-caspar select {
@@ -165,10 +160,10 @@ NOTE: Use these CSS selectors to style these elements within CF7 forms
 	border: 1px solid #c3c3c3;
 }
 
-.wpcf7 .cf7s-caspar select option{
+.wpcf7 .cf7s-caspar select option {
 }
 
-.wpcf7 .cf7s-caspar select option:hover{
+.wpcf7 .cf7s-caspar select option:hover {
 	background: #ededed;
 }
 
@@ -183,16 +178,16 @@ NOTE: Use these CSS selectors to style these elements within CF7 forms
 
 
 /** Submit Buttons
-NOTE: Use these CSS selectors to style these elements within CF7 forms
+NOTE: These are the CSS selectors that should be used to style Submit Buttons within CF7 forms
 ------------------------------------------------------------ */
-.wpcf7 .cf7s-caspar input[type="submit"] {
+.wpcf7 .wpcf7-form.cf7skins.cf7s-caspar input[type="submit"] {
 	padding: 5px 15px;
 	border: 1px solid #c3c3c3;
 	background: #ededed;
 	color: #1a1a1a;
 }
 
-.wpcf7 .cf7s-caspar input[type="submit"]:hover {
+.wpcf7 .wpcf7-form.cf7skins.cf7s-caspar input[type="submit"]:hover {
 	background: #fff;
 }
 

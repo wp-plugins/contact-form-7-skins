@@ -1,9 +1,9 @@
 /*
 Description: cf7s-default
 Default Contact Form 7 Skins Styling - provides base styling for all CF7 Skins Forms
-Author: cf7skins - Neil Murray
+Author: Neil Murray
 Author URI: cf7skins.com
-Version: 0.14
+Version: 1.01
 */
  
 /* Table of Contents
@@ -26,7 +26,7 @@ NOTE: Use to import other style sheets before setting cf7s defaults
 /* @import url('../parent/style.css'); */
 
 /* Resets
-NOTE: These items should be used to reset standard HTML elements within CF7 SKins forms
+NOTE: These are used to reset standard HTML form elements within CF7 forms
 ------------------------------------------------------------ */
 
 /* Fixes alignment issues due to padding & border thickness */
@@ -65,7 +65,6 @@ NOTE: These items should be used to style the overall CF7 Form
 }
 
 /* Fieldset, Legend, Label
-NOTE: Use these CSS selectors to style these elements within CF7 forms
 ------------------------------------------------------------ */
 
 .wpcf7-form.cf7skins fieldset {
@@ -93,7 +92,6 @@ NOTE: Use these CSS selectors to style these elements within CF7 forms
 }
 
 /* Text Fields
-NOTE: Use these CSS selectors to style these elements within CF7 forms
 ------------------------------------------------------------ */
 
 .wpcf7-form.cf7skins input {
@@ -111,8 +109,8 @@ NOTE: Use these CSS selectors to style these elements within CF7 forms
 .wpcf7-form.cf7skins input[type=date],
 .wpcf7-form.cf7skins input[type=file] {
 	width: 100%;  /* Set default width at 100% in all CF7 forms */
-	background: #fafafa; /* Some older themes do not style the newer HTML5 elements */
 	border: 1px solid #c0c0c0;  /* Color is same as used in normalize.css for Fieldset border */
+	background: #fafafa; /* Some older themes do not style the newer HTML5 elements */
 }
 
 /* This needs to be the same as other Input fields */
@@ -134,7 +132,6 @@ NOTE: Use these CSS selectors to style these elements within CF7 forms
 }
 
 /* Ordered & Unordered lists
-NOTE: Use these CSS selectors to style these elements within CF7 forms
 ------------------------------------------------------------ */
 
 /* Reset all lists within CF7 forms - overide current themes default list styles */
@@ -181,7 +178,6 @@ NOTE: Use these CSS selectors to style these elements within CF7 forms
 }
  
 /* Checkboxes, Radio Buttons and Drop Down Menus
-NOTE: Use these CSS selectors to style these elements within CF7 forms
 ------------------------------------------------------------ */
 
 /**
@@ -207,7 +203,7 @@ NOTE: Use these CSS selectors to style these elements within CF7 forms
 }
 
 .wpcf7-form.cf7skins select option:hover {
-	background: #dfdfdf;  /* Add Default hover style to all browsers */
+	background: #dfdfdf;  /* Add Default hover style in all browsers */
 }
 
 .wpcf7-form.cf7skins .wpcf7-checkbox .wpcf7-list-item,
@@ -249,7 +245,7 @@ NOTE: Use these CSS selectors to style these elements within CF7 forms
 }
 
 /* Submit Buttons
-NOTE: Use these CSS selectors to style these elements within CF7 forms
+NOTE: These are the CSS selectors that should be used to style Submit Buttons within CF7 forms
 ------------------------------------------------------------ */
 
 .wpcf7-form.cf7skins input[type="submit"] {

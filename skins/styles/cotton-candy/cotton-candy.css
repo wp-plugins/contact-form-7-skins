@@ -5,8 +5,8 @@
 * Author URI: http://cf7skins.com
 * Description:  Cotton Candy is a bright, eye-catching style that will stand out on your page with its bright and vibrant colors. This is a good style for any forms that need to stand out.
 * Instructions:
-* Version: 0.04
-* Version Date: 2015-02-28
+* Version: 1.01
+* Version Date: 2015-05-01
 * License: GNU General Public License v2 or later
 * License URI: http://www.gnu.org/licenses/gpl-2.0.html
 * Tags: aqua, pink, white, light
@@ -27,12 +27,12 @@
 */
 
 /** Import
-NOTE: Use to import other style sheets before setting cf7s defaults
+NOTE: Use to import other style sheets
 ------------------------------------------------------------ */
 /* @import url('../parent/style.css'); */
 
 /** Resets
-NOTE: These items should be used to reset standard HTML elements within CF7 forms
+NOTE: These are used to reset standard HTML form elements within CF7 forms
 ------------------------------------------------------------ */
 .wpcf7 .cf7s-cotton-candy p {
 }
@@ -54,7 +54,6 @@ NOTE: These items should be used to style the overall CF7 Form
 }
 
 /** Fieldset, Legend, Label
-NOTE: These items should be used to style these elements within CF7 forms
 ------------------------------------------------------------ */
 .wpcf7 .cf7s-cotton-candy fieldset {
 	margin: 10px 0;
@@ -78,6 +77,7 @@ NOTE: These items should be used to style these elements within CF7 forms
 }
 
 .wpcf7 .cf7s-cotton-candy fieldset fieldset {
+		margin: 10px 0; /* Above CSS overwritten by cf7s-default */
     border: 1px solid #e9aefe;
 	background: #f4d8ff;
 }
@@ -87,8 +87,8 @@ NOTE: These items should be used to style these elements within CF7 forms
 	background: #e79aff;
 }
 
-.wpcf7 .cf7s-cotton-candy fieldset fieldset input, 
-.wpcf7 .cf7s-cotton-candy fieldset fieldset textarea {
+.wpcf7 .wpcf7-form.cf7skins.cf7s-cotton-candy fieldset fieldset input, 
+.wpcf7 .wpcf7-form.cf7skins.cf7s-cotton-candy fieldset fieldset textarea {
 	border: 1px solid #f0b8ff;
 	background: #fff;
 }
@@ -98,15 +98,14 @@ NOTE: These items should be used to style these elements within CF7 forms
 }
 
 /** Text Fields
-NOTE: Use these CSS selectors to style these elements within CF7 forms
 ------------------------------------------------------------ */
-.wpcf7 .cf7s-cotton-candy input,
-.wpcf7 .cf7s-cotton-candy textarea {
+.wpcf7 .wpcf7-form.cf7skins.cf7s-cotton-candy input,
+.wpcf7 .wpcf7-form.cf7skins.cf7s-cotton-candy textarea {
 	margin-bottom: 8px;
 	padding: 7px;
+	color: #999;
 	border: 1px solid #9ffffe;
 	background: #fff;
-	color: #999;
 }
 
 .wpcf7 .cf7s-cotton-candy input[type="text"],
@@ -117,7 +116,6 @@ NOTE: Use these CSS selectors to style these elements within CF7 forms
 .wpcf7 .cf7s-cotton-candy input[type="range"],
 .wpcf7 .cf7s-cotton-candy input[type=date],
 .wpcf7 .cf7s-cotton-candy input[type=file] {
-/*		width: 100%;  Added to cf7s-default */
 }
 
 .wpcf7 .cf7s-cotton-candy input[type="text"] {
@@ -130,12 +128,10 @@ NOTE: Use these CSS selectors to style these elements within CF7 forms
 }
 
 .wpcf7 .cf7s-cotton-candy textarea {
-/*		width: 100%;  Added to cf7s-default */
 	padding: 5px 7px;  /* deliberately different from Input */
 }
 
 /** Ordered & Unordered lists
-NOTE: Use these CSS selectors to style these elements within CF7 forms
 ------------------------------------------------------------ */
 .wpcf7 .cf7s-cotton-candy ol,
 .wpcf7 .cf7s-cotton-candy ul,
@@ -156,17 +152,16 @@ NOTE: Use these CSS selectors to style these elements within CF7 forms
 }
 
 .wpcf7 .cf7s-cotton-candy .wpcf7-list-item-label {
-	margin-right: 7px;  /* adds space after Radio Button labels */
+	margin-right: 7px;
 }
 
 /** Checkboxes, Radio Buttons and Drop Down Menus
-NOTE: Use these CSS selectors to style these elements within CF7 forms
 ------------------------------------------------------------ */
-.wpcf7 .cf7s-cotton-candy input[type="checkbox"],
-.wpcf7 .cf7s-cotton-candy input[type="radio"] {
+.wpcf7 .wpcf7-form.cf7skins.cf7s-cotton-candy input[type="checkbox"],
+.wpcf7 .wpcf7-form.cf7skins.cf7s-cotton-candy input[type="radio"] {
 	margin-right: 6px;
 	border: none;
-	background: none;  /* needed for IE - cf7s-default is not specific enough */
+	background: none;
 }
 
 .wpcf7 .cf7s-cotton-candy select {
@@ -176,7 +171,7 @@ NOTE: Use these CSS selectors to style these elements within CF7 forms
 	border: 1px solid #9ffffe;
 }
 
-.wpcf7 .cf7s-cotton-candy select option{
+.wpcf7 .cf7s-cotton-candy select option {
 }
 
 .wpcf7 .cf7s-cotton-candy select option:hover{
@@ -194,16 +189,16 @@ NOTE: Use these CSS selectors to style these elements within CF7 forms
 
 
 /** Submit Buttons
-NOTE: Use these CSS selectors to style these elements within CF7 forms
+NOTE: These are the CSS selectors that should be used to style Submit Buttons within CF7 forms
 ------------------------------------------------------------ */
-.wpcf7 .cf7s-cotton-candy input[type="submit"] {
+.wpcf7 .wpcf7-form.cf7skins.cf7s-cotton-candy input[type="submit"] {
 	padding: 5px 15px;
 	background: #91ebeb;
 	border: 1px solid #6ccbcb;
 	color: #fff;
 }
 
-.wpcf7 .cf7s-cotton-candy input[type="submit"]:hover {
+.wpcf7 .wpcf7-form.cf7skins.cf7s-cotton-candy input[type="submit"]:hover {
 	background: #e59bff;
 }
 

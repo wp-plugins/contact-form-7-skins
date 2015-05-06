@@ -5,8 +5,8 @@
 * Author URI: http://cf7skins.com
 * Description:  This delicious style will work well with a range of different backgrounds, drawing in attention with its smooth and clean styling.
 * Instructions:
-* Version: 0.04
-* Version Date: 2015-02-25
+* Version: 1.01
+* Version Date: 2015-05-01
 * License: GNU General Public License v2 or later
 * License URI: http://www.gnu.org/licenses/gpl-2.0.html
 * Tags: brown, white, light
@@ -27,7 +27,7 @@
 */
 
 /** Import
-NOTE: Use to import other style sheets before setting cf7s defaults
+NOTE: Use to import other style sheets
 ------------------------------------------------------------ */
 /* @import url('../parent/style.css'); */
 
@@ -44,7 +44,7 @@ NOTE: These are used to reset standard HTML form elements within CF7 forms
 }
 
 /** Form & Controls
-NOTE: These items should be used style the overall Form within CF7 forms
+NOTE: These items should be used to style the overall CF7 form
 ------------------------------------------------------------ */
 .wpcf7 .cf7s-choc-shake {
 	padding: 20px;
@@ -54,7 +54,6 @@ NOTE: These items should be used style the overall Form within CF7 forms
 }
 
 /** Fieldset, Legend, Label
-NOTE: These items should be used to style these elements within CF7 forms
 ------------------------------------------------------------ */
 .wpcf7 .cf7s-choc-shake fieldset {
 	margin: 10px 0;
@@ -78,6 +77,7 @@ NOTE: These items should be used to style these elements within CF7 forms
 }
 
 .wpcf7 .cf7s-choc-shake fieldset fieldset {
+		margin: 10px 0; /* Above CSS overwritten by cf7s-default */
 	background: #ccb7a4;
 }
 
@@ -89,10 +89,9 @@ NOTE: These items should be used to style these elements within CF7 forms
 }
 
 /** Text Fields
-NOTE: These are the CSS selectors that should be used style these fields within CF7 forms
 ------------------------------------------------------------ */
-.wpcf7 .cf7s-choc-shake input,
-.wpcf7 .cf7s-choc-shake textarea {
+.wpcf7 .wpcf7-form.cf7skins.cf7s-choc-shake input,
+.wpcf7 .wpcf7-form.cf7skins.cf7s-choc-shake textarea {
 	margin-bottom: 8px;
 	padding: 7px;
 	color: #fff;
@@ -108,7 +107,6 @@ NOTE: These are the CSS selectors that should be used style these fields within 
 .wpcf7 .cf7s-choc-shake input[type="range"],
 .wpcf7 .cf7s-choc-shake input[type=date],
 .wpcf7 .cf7s-choc-shake input[type=file] {
-/*		width: 100%;  Added to cf7s-default */
 }
 
 .wpcf7 .cf7s-choc-shake input[type="text"] {
@@ -121,11 +119,9 @@ NOTE: These are the CSS selectors that should be used style these fields within 
 }
 
 .wpcf7 .cf7s-choc-shake textarea {
-/*		width: 100%;  Added to cf7s-default */
 }
 
 /** Ordered & Unordered lists
-NOTE: These are the CSS selectors that should be used style these fields within CF7 forms
 ------------------------------------------------------------ */
 .wpcf7 .cf7s-choc-shake ol,
 .wpcf7 .cf7s-choc-shake ul,
@@ -150,13 +146,12 @@ NOTE: These are the CSS selectors that should be used style these fields within 
 }
 
 /** Checkboxes, Radio Buttons and Drop Down Menus
-NOTE: These are the CSS selectors that should be used style these Fields within CF7 forms
 ------------------------------------------------------------ */
-.wpcf7 .cf7s-choc-shake input[type="checkbox"],
-.wpcf7 .cf7s-choc-shake input[type="radio"] {
+.wpcf7 .wpcf7-form.cf7skins.cf7s-choc-shake input[type="checkbox"],
+.wpcf7 .wpcf7-form.cf7skins.cf7s-choc-shake input[type="radio"] {
 	margin-right: 6px;
 	border: none;
-	background: none;  /* needed for IE - cf7s-default is not specific enough */
+	background: none;
 }
 
 .wpcf7 .cf7s-choc-shake select {
@@ -167,7 +162,7 @@ NOTE: These are the CSS selectors that should be used style these Fields within 
 	background: #dec29d;
 }
 
-.wpcf7 .cf7s-choc-shake select option{
+.wpcf7 .cf7s-choc-shake select option {
 }
 
 .wpcf7 .cf7s-choc-shake select option:hover {
@@ -181,21 +176,21 @@ NOTE: These are the CSS selectors that should be used style these Fields within 
 }
 
 /** Other Fields
-NOTE: These are the CSS selectors that should be used style these fields within CF7 forms
+NOTE: Use these CSS selectors to style these elements within CF7 forms
 ------------------------------------------------------------ */
 
 
 /** Submit Buttons
-NOTE: These are the CSS selectors that should be used style Submit Buttons within CF7 forms
+NOTE: These are the CSS selectors that should be used to style Submit Buttons within CF7 forms
 ------------------------------------------------------------ */
-.wpcf7 .cf7s-choc-shake input[type="submit"] {
+.wpcf7 .wpcf7-form.cf7skins.cf7s-choc-shake input[type="submit"] {
 	padding: 5px 15px;
 	color: #fff;
 	border: 1px solid #c9b3a0;
 	background: #bca17d;
 }
 
-.wpcf7 .cf7s-choc-shake input[type="submit"]:hover {
+.wpcf7 .wpcf7-form.cf7skins.cf7s-choc-shake input[type="submit"]:hover {
 	color: #866c4a;
 	background: #dec29d;
 }

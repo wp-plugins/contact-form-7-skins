@@ -5,8 +5,8 @@
 * Author URI: http://cf7skins.com
 * Description: Pina Colada is a simple yet attractive style that will blend in nicely with many themes. Its clean detailing and soft colors will add a smart and sophisticated appearance to your website forms.
 * Instructions:
-* Version: 0.04
-* Version Date: 2015-02-28
+* Version: 1.01
+* Version Date: 2015-05-01
 * License: GNU General Public License v2 or later
 * License URI: http://www.gnu.org/licenses/gpl-2.0.html
 * Tags: featured, red, brown, white, light
@@ -27,7 +27,7 @@
 */
 
 /** Import
-NOTE: Use to import other style sheets before setting cf7s defaults
+NOTE: Use to import other style sheets
 ------------------------------------------------------------ */
 /* @import url('../parent/style.css'); */
 
@@ -44,7 +44,7 @@ NOTE: These are used to reset standard HTML form elements within CF7 forms
 }
 
 /** Form & Controls
-NOTE: These items should be used style the overall Form within CF7 forms
+NOTE: These items should be used to style the overall CF7 form
 ------------------------------------------------------------ */
 .wpcf7 .cf7s-pina-colada {
 	padding: 20px;
@@ -54,7 +54,6 @@ NOTE: These items should be used style the overall Form within CF7 forms
 }
 
 /** Fieldset, Legend, Label
-NOTE: These items should be used to style these elements within CF7 forms
 ------------------------------------------------------------ */
 .wpcf7 .cf7s-pina-colada fieldset {
 	margin: 10px 0;
@@ -78,6 +77,7 @@ NOTE: These items should be used to style these elements within CF7 forms
 }
 
 .wpcf7 .cf7s-pina-colada fieldset fieldset {
+		margin: 10px 0; /* Above CSS overwritten by cf7s-default */
 	background: #fff;
 }
 
@@ -89,10 +89,9 @@ NOTE: These items should be used to style these elements within CF7 forms
 }
 
 /** Text Fields
-NOTE: These are the CSS selectors that should be used style these fields within CF7 forms
 ------------------------------------------------------------ */
-.wpcf7 .cf7s-pina-colada input,
-.wpcf7 .cf7s-pina-colada textarea {
+.wpcf7 .wpcf7-form.cf7skins.cf7s-pina-colada input,
+.wpcf7 .wpcf7-form.cf7skins.cf7s-pina-colada textarea {
 	margin-bottom: 5px;
 	padding: 5px 10px;
 	border: 1px solid #d7cfb9;
@@ -107,7 +106,6 @@ NOTE: These are the CSS selectors that should be used style these fields within 
 .wpcf7 .cf7s-pina-colada input[type="range"],
 .wpcf7 .cf7s-pina-colada input[type=date],
 .wpcf7 .cf7s-pina-colada input[type=file] {
-/*		width: 100%;  Added to cf7s-default */
 }
 
 .wpcf7 .cf7s-pina-colada input[type="text"] {
@@ -120,12 +118,10 @@ NOTE: These are the CSS selectors that should be used style these fields within 
 }
 
 .wpcf7 .cf7s-pina-colada textarea {
-/*		width: 100%;  Added to cf7s-default */
 	padding: 5px 7px;  /* deliberately different from Input */
 }
 
 /** Ordered & Unordered lists
-NOTE: These are the CSS selectors that should be used style these fields within CF7 forms
 ------------------------------------------------------------ */
 .wpcf7 .cf7s-pina-colada ol,
 .wpcf7 .cf7s-pina-colada ul,
@@ -150,10 +146,9 @@ NOTE: These are the CSS selectors that should be used style these fields within 
 }
 
 /** Checkboxes, Radio Buttons and Drop Down Menus
-NOTE: These are the CSS selectors that should be used style these Fields within CF7 forms
 ------------------------------------------------------------ */
-.wpcf7 .cf7s-pina-colada input[type="checkbox"],
-.wpcf7 .cf7s-pina-colada input[type="radio"] {
+.wpcf7 .wpcf7-form.cf7skins.cf7s-pina-colada input[type="checkbox"],
+.wpcf7 .wpcf7-form.cf7skins.cf7s-pina-colada input[type="radio"] {
 	border: none;
 	background: none;  /* needed for IE - cf7s-default is not specific enough */
 }
@@ -174,14 +169,14 @@ NOTE: These are the CSS selectors that should be used style these Fields within 
 }
 
 /** Other Fields
-NOTE: These are the CSS selectors that should be used style these fields within CF7 forms
+NOTE: Use these CSS selectors to style these elements within CF7 forms
 ------------------------------------------------------------ */
 
 
 /** Submit Buttons
-NOTE: These are the CSS selectors that should be used style Submit Buttons within CF7 forms
+NOTE: These are the CSS selectors that should be used to style Submit Buttons within CF7 forms
 ------------------------------------------------------------ */
-.wpcf7 .cf7s-pina-colada input[type="submit"] {
+.wpcf7 .wpcf7-form.cf7skins.cf7s-pina-colada input[type="submit"] {
 	background: #4b0016; /* Old browsers */
 	background: -moz-linear-gradient(top, #4b0016 0%, #77003a 47%, #720031 50%, #670020 53%, #99005d 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4b0016), color-stop(47%,#77003a), color-stop(50%,#720031), color-stop(53%,#670020), color-stop(100%,#99005d)); /* Chrome,Safari4+ */
@@ -194,7 +189,7 @@ NOTE: These are the CSS selectors that should be used style Submit Buttons withi
 	padding: 7px 10px;
 }
 
-.wpcf7 .cf7s-pina-colada input[type="submit"]:hover {
+.wpcf7 .wpcf7-form.cf7skins.cf7s-pina-colada input[type="submit"]:hover {
 	background: #000;
 }
 

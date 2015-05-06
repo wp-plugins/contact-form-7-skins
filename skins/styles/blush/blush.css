@@ -5,8 +5,8 @@
 * Author URI: http://cf7skins.com
 * Description: Named for its subtlety and soft colors, Blush will blend in with many themes, especially those with a similar color scheme.
 * Instructions:
-* Version: 0.04
-* Version Date: 2015-02-25
+* Version: 1.01
+* Version Date: 2015-05-01
 * License: GNU General Public License v2 or later
 * License URI: http://www.gnu.org/licenses/gpl-2.0.html
 * Tags: pink, white, gray, light
@@ -27,12 +27,12 @@
 */
 
 /** Import
-NOTE: Use to import other style sheets before setting cf7s defaults
+NOTE: Use to import other style sheets
 ------------------------------------------------------------ */
 /* @import url('../parent/style.css'); */
 
 /** Resets
-NOTE: These items should be used to reset standard HTML elements within CF7 forms
+NOTE: These are used to reset standard HTML form elements within CF7 forms
 ------------------------------------------------------------ */
 .wpcf7 .cf7s-blush p {
 }
@@ -44,7 +44,7 @@ NOTE: These items should be used to reset standard HTML elements within CF7 form
 }
 
 /** Form & Controls
-NOTE: These items should be used to style the overall CF7 Form
+NOTE: These items should be used to style the overall CF7 form
 ------------------------------------------------------------ */
 .wpcf7 .cf7s-blush {
 	padding: 20px;
@@ -54,10 +54,9 @@ NOTE: These items should be used to style the overall CF7 Form
 }
 
 /** Fieldset, Legend, Label
-NOTE: These items should be used to style these elements within CF7 forms
 ------------------------------------------------------------ */
 .wpcf7 .cf7s-blush fieldset {
-	margin: 10px 0;
+	margin: 10px 0;  /* Add to cf7s-default? */
 	padding: 10px 20px;
 	border: 1px solid #bb9393;
 	background: #dcc7c6;
@@ -78,6 +77,7 @@ NOTE: These items should be used to style these elements within CF7 forms
 }
 
 .wpcf7 .cf7s-blush fieldset fieldset {
+		margin: 10px 0; /* Above CSS overwritten by cf7s-default */
 	background: #e9d9da;
 }
 
@@ -89,10 +89,9 @@ NOTE: These items should be used to style these elements within CF7 forms
 }
 
 /** Text Fields
-NOTE: Use these CSS selectors to style these elements within CF7 forms
 ------------------------------------------------------------ */
-.wpcf7 .cf7s-blush input,
-.wpcf7 .cf7s-blush textarea {
+.wpcf7 .wpcf7-form.cf7skins.cf7s-blush input,
+.wpcf7 .wpcf7-form.cf7skins.cf7s-blush textarea {
 	margin-bottom: 8px;
 	padding: 7px;
 	border: 1px solid #b89090;
@@ -107,7 +106,6 @@ NOTE: Use these CSS selectors to style these elements within CF7 forms
 .wpcf7 .cf7s-blush input[type="range"],
 .wpcf7 .cf7s-blush input[type=date],
 .wpcf7 .cf7s-blush input[type=file] {
-/*		width: 100%;  Added to cf7s-default */
 }
 
 .wpcf7 .cf7s-blush input[type="text"] {
@@ -120,12 +118,10 @@ NOTE: Use these CSS selectors to style these elements within CF7 forms
 }
 
 .wpcf7 .cf7s-blush textarea {
-/*		width: 100%;  Added to cf7s-default */
 	padding: 5px 7px;  /* deliberately different from Input */
 }
 
 /** Ordered & Unordered lists
-NOTE: Use these CSS selectors to style these elements within CF7 forms
 ------------------------------------------------------------ */
 .wpcf7 .cf7s-blush ol,
 .wpcf7 .cf7s-blush ul,
@@ -136,7 +132,7 @@ NOTE: Use these CSS selectors to style these elements within CF7 forms
 }
 
 .wpcf7 .cf7s-blush li {
-	margin-bottom: 5px;  /*  in many cases this adds to Input margin-bottom: 8px; */
+	margin-bottom: 5px;  /* in many cases this adds to Input margin-bottom: 8px; */
 }
 
 .wpcf7 .cf7s-blush li label {
@@ -150,26 +146,25 @@ NOTE: Use these CSS selectors to style these elements within CF7 forms
 }
 
 /** Checkboxes, Radio Buttons and Drop Down Menus
-NOTE: Use these CSS selectors to style these elements within CF7 forms
 ------------------------------------------------------------ */
-.wpcf7 .cf7s-blush input[type="checkbox"],
-.wpcf7 .cf7s-blush input[type="radio"] {
+.wpcf7 .wpcf7-form.cf7skins.cf7s-blush input[type="checkbox"],
+.wpcf7 .wpcf7-form.cf7skins.cf7s-blush input[type="radio"] {
 	margin-right: 6px;
 	border: none;
 	background: none;  /* needed for IE - cf7s-default is not specific enough */
 }
 
 .wpcf7 .cf7s-blush select {
-	margin-bottom: 8px;
+	margin-bottom: 8px;  /* Add to cf7s-default? */
 	margin-left: 0;  /* same as Input */
 	padding: 5px;
 	border: 1px solid #b89090;
 }
 
-.wpcf7 .cf7s-blush select option{
+.wpcf7 .cf7s-blush select option {
 }
 
-.wpcf7 .cf7s-blush select option:hover{
+.wpcf7 .cf7s-blush select option:hover {
 	background: #dcc7c6;
 }
 
@@ -184,17 +179,17 @@ NOTE: Use these CSS selectors to style these elements within CF7 forms
 
 
 /** Submit Buttons
-NOTE: Use these CSS selectors to style these elements within CF7 forms
+NOTE: These are the CSS selectors that should be used to style Submit Buttons within CF7 forms
 ------------------------------------------------------------ */
-.wpcf7 .cf7s-blush input[type="submit"] {
+.wpcf7 .wpcf7-form.cf7skins.cf7s-blush input[type="submit"] {
 	font-size: 1.2em;  /* Font size matches Legend */
 	padding: 5px 15px;
+	color: #fff;
 	border: 1px solid #bfbfbf;
 	background: #3b3b3b;
-	color: #fff;
 }
 
-.wpcf7 .cf7s-blush input[type="submit"]:hover {
+.wpcf7 .wpcf7-form.cf7skins.cf7s-blush input[type="submit"]:hover {
 	color: #dcc7c6;
 }
 
