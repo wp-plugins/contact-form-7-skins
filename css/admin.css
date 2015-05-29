@@ -232,6 +232,31 @@
     font-style: normal;
 }
 
+/* For CF7 >= 4.2 */
+#cf7skins-42 h3 {
+    font-size: 14px;
+    line-height: 1.4;
+    margin: 0;
+    padding: 8px 12px;
+	cursor: default;
+}
+#cf7skins-42 .handlediv:before {
+	right: 12px;
+	font: normal 20px/1 'dashicons';
+	speak: none;
+	display: inline-block;
+	padding: 8px 10px;
+	top: 0;
+	position: relative;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-decoration: none !important;
+	content: '\f142';
+}
+#cf7skins-42.closed .handlediv:before {
+	content: '\f140';
+}
+
 /* Media query based on users screen size */
 @media only screen and (max-width: 1160px) {
 	#cf7s .nav-tab-content .skin {

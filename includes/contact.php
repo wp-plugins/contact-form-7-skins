@@ -39,25 +39,45 @@ class CF7_Skins_Contact {
 		
 		// Return if current page has no id
 		if( ! isset( $post->ID ) )
-			return;
+			return false;
 		
+		return $this->parse_shortcode_id( $post->post_content );
+	}
+	
+	
+	/**
+	 * Parse the CF7 shortcode ID in single or nested shortcodes
+     * @return (array) of CF7 id(s)
+	 * @since 1.0.2
+     */			
+	function parse_shortcode_id( $content ) {
 		$tag = 'contact-form-7';
 		
 		// Return if there is no CF7 shortcode in post content
-		if ( ! has_shortcode( $post->post_content , $tag ) )
-			return;
+		if ( ! has_shortcode( $content , $tag ) )
+			return false;
 		
 		// Get all the CF7 form shortcodes in the post content
-		preg_match_all( '/' . get_shortcode_regex() . '/s', $post->post_content, $matches, PREG_SET_ORDER );
+		// Use similar approach as wp-includes\shortcodes.php has_shortcode() function
+		preg_match_all( '/' . get_shortcode_regex() . '/s', $content, $matches, PREG_SET_ORDER );
 		
+		if ( empty( $matches ) )
+			return false;
+
 		// Loop through shortcodes, parse shortcode attributes and get the CF7 form ID
 		foreach ( $matches as $shortcode ) {
-			if ( $tag === $shortcode[2] ) {
+			
+			if ( $tag === $shortcode[2] ) {			
 				$atts = shortcode_parse_atts( $shortcode[3] );
-				$ids[] = $atts['id']; // add the CF7 form ID
+				$ids[] = $atts['id']; // Add the CF7 form ID
+			
+			// Nested shortcode
+			} elseif ( ! empty( $shortcode[5] ) && has_shortcode( $shortcode[5], $tag ) ) { // nested shortcodes
+				$shortcode = $this->parse_shortcode_id( $shortcode[5] );
 			}
+			
 		}
-		
+
 		// Return all the CF7 form ID
 		if ( isset( $ids ) )
 			return $ids;
@@ -160,9 +180,10 @@ class CF7_Skins_Contact {
 		
 		// CF7 Skins default class
 		$cf7skins_class = ( $template_class || $skin_class ) ? ' cf7skins' : '';
+		$cf7skins_classes = apply_filters( 'cf7skins_form_classes', $cf7skins_class );
 		
 		// Return the modified class
-		return $class . $cf7skins_class . $template_class . $skin_class;
+		return $class . $cf7skins_classes . $template_class . $skin_class;
 	}
 	
 	

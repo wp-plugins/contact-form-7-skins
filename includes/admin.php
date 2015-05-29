@@ -21,6 +21,7 @@ class CF7_Skins_Admin {
 	
 		// Create the metabox for CF7 Skins
 		add_action( 'wpcf7_add_meta_boxes', array( &$this, 'add_meta_boxes' ) );
+		add_action( 'wpcf7_admin_footer', array( &$this, 'add_meta_boxes_42' ) );
 		
 		// Push the styles and scripts to the admin header
 		add_action( 'admin_enqueue_scripts', array( &$this, 'admin_enqueue_scripts' ) );
@@ -114,6 +115,33 @@ class CF7_Skins_Admin {
 			
 		// Add action while creating the skins metabox
 		do_action( 'cf7s_add_meta_boxes', $post_id );
+	}
+	
+	
+	/**
+     * Custom skins dialog added in the CF7 Footer for version 4.2
+	 *
+	 * @action wpcf7_admin_footer
+     * @param $post contact form object
+     * @since 1.0.1
+     */	
+	function add_meta_boxes_42( $post ) {
+		if (version_compare(WPCF7_VERSION, '4.2') >= 0) {
+		
+			// Create the container id for javascript pointer
+			// This is added if using add_meta_box() function
+			echo '<div class="wrap">';
+				echo '<div id="cf7skins-42" class="postbox">';
+				echo '<div title="'. __('Click to toggle', CF7SKINS_TEXTDOMAIN ) .'" class="handlediv"><br></div>';
+					echo '<h3 class="hndle"><span>'. __('Skins', CF7SKINS_TEXTDOMAIN ) .'</span></h3>';
+					echo '<div class="inside">';
+						echo '<div id="cf7s" class="cf7-42">';
+							$this->generate_tab( null, null );  // in tab.php	
+						echo '</div>';
+					echo '</div>';
+				echo '</div>';
+			echo '</div>';
+		}
 	}
 	
 	

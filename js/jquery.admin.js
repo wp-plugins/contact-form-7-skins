@@ -15,6 +15,14 @@
 			var t = this, post_id;
 			this.post_id = $("#post_ID").val();
 			
+			// Check if hidden input for template/style is inside the form			
+			if ( $("#cf7s-template").parents("#wpcf7-admin-form-element").length == 1 ) { 
+				// input is inside form
+			} else {
+				$("#wpcf7-admin-form-element").append( $("#cf7s-template") );
+				$("#wpcf7-admin-form-element").append( $("#cf7s-style") );
+			}
+			
 			$("#cf7s .nav-tab:nth-child(1)").addClass("nav-tab-active");
 			$("#cf7s .nav-tab-content > div:nth-child(1)").addClass("active");
 			$("#cf7s .nav-tab").click( function(e) {
@@ -111,6 +119,12 @@
 					return 'Changes have been made, are you sure you want to leave?';
 				}
 			}
+			
+			// Expand collapse skin box for CF7 >= 4.2
+			$('#cf7skins-42 .handlediv').click( function(e) {
+				e.stopPropagation();
+				$(this).parent('.postbox').toggleClass('closed');
+			});			
 		},
 		
 		tab : function(e) {
@@ -122,12 +136,20 @@
 		},
 		
 		select : function(e) {
-			var inp, pos, wrap, details, skin;
+			var inp, pos, wrap, details, skin, textarea;
 			skin = $(e).attr("data-value"),
-			inp = $(e).attr("href");
+			inp = $(e).attr("href"); // this is the hidden input for storing selected template/style
 			wrap = $(e).closest(".tab-content");
 			$(inp).val(skin).trigger('change');
 			details = $(e).closest(".details");
+			
+			// Default contact form editor id is #wpcf7-form
+			// In case if another plugins modify the textarea for cf7 editor, get the first visible textarea in the container			
+			// Check if CF7 is above or 4.2
+			if ( $("#formdiv .half-left")[0] )
+				textarea = $("#formdiv .half-left").find('textarea').filter(':visible:first');
+			else	
+				textarea = $("#wpcf7-admin-form-element").find('textarea').filter(':visible:first');
 			
 			// remove and add highlight to the selected skin
 			$(".skin", wrap).removeClass("skin-selected");
@@ -146,7 +168,7 @@
 				// pos = $("#wpcf7-form").position();
 				// $("body, html").animate({ scrollTop: pos.top }, 800 );
 				
-				$("#wpcf7-form").val( l10n.loading );
+				$(textarea).val( l10n.loading );
 				
 				$.post( ajaxurl, { 
 					action: cf7s.load, 					
@@ -155,7 +177,7 @@
 					locale: $(e).attr("data-locale"), 
 					nonce: cf7s.nonce 
 				}, function( data ) {
-					$("#wpcf7-form").val( data ).trigger('change');
+					$(textarea).val( data ).trigger('change');
 				});
 			}
 		},

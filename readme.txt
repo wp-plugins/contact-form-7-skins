@@ -1,24 +1,24 @@
 === Contact Form 7 Skins ===
 Contributors: buzztone
 Tags: contact form 7, form, skin, template, style, html, css
-Requires at least: 4.0
-Tested up to: 4.2
-Stable tag: 1.0.1
+Requires at least: 4.1
+Tested up to: 4.2.2
+Stable tag: 1.0.2
 Author URI: http://cf7skins.com
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Makes styling of Contact Form 7 forms much easier – even if you don’t have HTML + CSS skills.
+Makes building & styling of Contact Form 7 forms much easier – even if you don’t have HTML + CSS skills.
 
 == Description == 
 
-[CF7 Skins](http://cf7skins.com/) works right within the normal Contact Form 7 interface, making it easier for regular WordPress users to create professional looking Contact Form 7 forms using a range of compatible **Templates** and **Styles**.
+[CF7 Skins](http://cf7skins.com/) works right within the Contact Form 7 interface, making it easier for regular WordPress users to create professional looking Contact Form 7 forms using a range of compatible **Templates** and **Styles**.
 
-Simply select from a list of compatible Templates that cover many common forms and then choose a Style for your form from a range of professional and beautiful Styles. 
+Simply select from a list of Templates that cover many common forms and then choose a Style for your form from a range of professional and beautiful Styles. 
 
 Each Template acts as an easy to follow guide, which can be adapted to your particular requirements. Every Style covers the full range of Contact Form 7 form elements.
 
-CF7 Skins is highly customizable and easy to learn, even for beginners. CF7 Skins makes building and styling Contact Form 7 forms much easier - even if you don't have HTML and CSS skills.
+CF7 Skins is highly customizable and easy to learn, even for beginners.
 
 = CF7 Skins Features =
 
@@ -94,9 +94,16 @@ Many questions have been answered on the [CF7 Skins FAQ](http://kb.cf7skins.com/
 
 == Changelog ==
 
+= 1.0.2 - 2015-05-29 =
+
+* FIX: wpcf7_add_meta_boxes action removed in Contact Form 7 4.2
+* FIX: Parse the CF7 shortcode ID in single or nested shortcodes
+* FIX: Ensure JavaScript finds active textarea
+* TWEAK: Add cf7skins_form_classes filter hook
+
 = 1.0.1 - 2015-05-06 =
 
-* FIX: Default CSS was overriding input & textarea Styles
+* FIX: Default CSS overriding input & textarea Styles
 
 = 1.0 - 2015-04-01 =
 
