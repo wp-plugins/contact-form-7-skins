@@ -20,6 +20,9 @@ if ( isset( $option['delete_data'] ) && $option['delete_data'] ) {
 	// Delete plugin option
 	delete_option('cf7skins');
 	delete_option('cf7skins_version_installed');
+	delete_option('cf7skins_activated');
+	delete_option('cf7skins_get_version');
+	delete_option('cf7skins_activation');
 
 	// Delete all post meta by key.
 	// This plugin uses post meta cf7s_style for selected style

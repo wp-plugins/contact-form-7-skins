@@ -3,7 +3,7 @@
  * Plugin Name: Contact Form 7 Skins
  * Plugin URI:  http://cf7skins.com
  * Description: Adds Skins including Templates & Styles to Contact Form 7. Requires Contact Form 7.
- * Version:     1.0.2
+ * Version:     1.1
  * Author:      Neil Murray
  * Author URI:  http://cf7skins.com
  * License:     GPL-2.0+
@@ -44,8 +44,8 @@ if ( ! defined( 'ABSPATH' ) )
  * 
  * @since 0.0.1
  */
-define( 'CF7SKINS_VERSION', '1.0.2' );
-define( 'CF7SKINS_SLUG', 'cf7skins' );
+define( 'CF7SKINS_VERSION', '1.1' );
+define( 'CF7SKINS_OPTIONS', 'cf7skins' );
 define( 'CF7SKINS_TEXTDOMAIN', 'cf7skins' );
 define( 'CF7SKINS_FEATURE_FILTER', false ); // @since 0.4.0
 define( 'CF7SKINS_PATH', plugin_dir_path( __FILE__ ) );

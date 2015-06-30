@@ -290,7 +290,7 @@ class CF7_Skins_Contact {
 	 * @author Neil Murray
      */		
 	function print_custom() {
-		$option = get_option( CF7SKINS_SLUG );
+		$option = get_option( CF7SKINS_OPTIONS );
 		if( isset( $option['custom'] ) && $option['custom'] )
 			echo $option['custom'];
 	}	

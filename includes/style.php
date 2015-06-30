@@ -419,7 +419,7 @@ class CF7_Skin_Style extends CF7_Skin {
 					
 				<div class="block-details"><div>
 					<ul class="clearfix skin-action">
-						<li><a class="balloon view" data-value="<?php $this->get_slug_name( $style ); ?>" href="#cf7s-style" title="<?php _e( 'Use Expanded View to view styles features - shows all form fields available in Contact Form 7.', $this->textdomain ); ?>"><?php _e('Expanded View', $this->textdomain ); ?></a></li>
+						<li><a class="balloon view" data-value="<?php $this->get_slug_name( $style ); ?>" href="#cf7s-style" title="<?php _e( 'Use Expanded View to view Styles features - shows all form fields available in Contact Form 7.', $this->textdomain ); ?>"><?php _e('Expanded View', $this->textdomain ); ?></a></li>
 						<li><a class="balloon select<?php echo $class; ?>" data-value="<?php $this->get_slug_name( $style ); ?>" href="#cf7s-style" title="<?php _e( 'Select to apply the Style to your form - is applied to your form once you Save.', $this->textdomain ); ?>"><?php echo $select_text; ?></a></li>
 						<li><a class="balloon close" href="#" title="<?php _e( 'Return to Style Gallery/Grid view.', $this->textdomain ); ?>"><?php _e('Close', $this->textdomain ); ?></a></li>
 					</ul>			

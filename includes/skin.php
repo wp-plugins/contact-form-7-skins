@@ -31,7 +31,7 @@ class CF7_Skin {
      */	
     function __construct() {
 		// Set class variables
-		$this->name 	  = CF7SKINS_SLUG;
+		$this->name 	  = CF7SKINS_OPTIONS;
 		$this->version 	  = CF7SKINS_VERSION;
 		$this->textdomain = CF7SKINS_TEXTDOMAIN;
     }

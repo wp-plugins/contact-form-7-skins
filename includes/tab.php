@@ -217,14 +217,14 @@ class CF7_Skins_Admin_Tab extends CF7_Skins_Admin {
 	 * @since 0.0.1
 	 */		
 	function generate_tab( $post, $box ) {
-		$option = get_option( CF7SKINS_SLUG );
+		$option = get_option( CF7SKINS_OPTIONS );
 		$color_scheme = isset( $option['color_scheme'] ) ? $option['color_scheme'] : '';
 		
 		// Template tooltip text
 		// @since 0.2.0
 		$this->tabs['template'] = array(
 			'label' => __( 'Template', 'cf7skins'),
-			'note' => __( 'Each Template acts as an easy to follow guide, which can be adapted to your requirements < Templates >', 'cf7skins'),
+			'note' => __( 'Each Template acts as an easy to follow guide, which can be adapted to your requirements', 'cf7skins'),
 			'help' => __( 'Choose a Template for your form – then you can add, copy or remove fields to match your requirements.', 'cf7skins'),
 		);
 		
@@ -232,7 +232,7 @@ class CF7_Skins_Admin_Tab extends CF7_Skins_Admin {
 		// @since 0.2.0
 		$this->tabs['style'] = array(
 			'label' => __( 'Style', 'cf7skins'),
-			'note' => __( 'Each Style covers the full range of standard form elements available within Contact Form 7 <Styles>', 'cf7skins'),
+			'note' => __( 'Each Style covers the full range of standard form elements available within Contact Form 7', 'cf7skins'),
 			'help' => __( 'You can change the Style applied to your form by simply selecting a different Style', 'cf7skins')
 		);
 		?>

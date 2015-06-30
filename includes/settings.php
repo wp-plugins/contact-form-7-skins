@@ -27,7 +27,7 @@ class CF7_Skins_Settings {
 	 * @since 0.1.0
      */
     function __construct() {
-		$this->slug = CF7SKINS_SLUG;
+		$this->slug = CF7SKINS_OPTIONS;
 		$this->textdomain = CF7SKINS_TEXTDOMAIN;			
 		
 		$this->section = isset( $_GET['tab'] ) ? $_GET['tab'] : 'general';

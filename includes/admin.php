@@ -79,11 +79,11 @@ class CF7_Skins_Admin {
 		
 		wp_enqueue_script( 'tipsy',
 			CF7SKINS_URL . 'js/jquery.tipsy.js',
-			array( 'jquery' ), '1.0.0a' );
+			array( 'jquery' ), '1.0.0a', true );
 		
 		wp_enqueue_script( 'cf7s-admin',
 			CF7SKINS_URL . 'js/jquery.admin.js',
-			array( 'jquery', 'underscore' ), CF7SKINS_VERSION );
+			array( 'jquery', 'underscore' ), CF7SKINS_VERSION, true );
 		
 		wp_localize_script( 'cf7s-admin', 'cf7s', array(
 			'nonce'		=> wp_create_nonce( 'cf7s' ),   // generate a nonce for security checking
@@ -155,4 +155,23 @@ class CF7_Skins_Admin {
 	function skins_meta_box( $post, $box ) {
 		$this->generate_tab( $post, $box );  // in tab.php
 	}
+	
+	
+	/**
+	 * Check if current admin page is contact form editing page
+	 * @since 1.0.2
+	 */
+	public static function edit_page() {
+		global $hook_suffix;
+				
+		// Don't show at the Contact Form 7 list wp-admin/admin.php?page=wpcf7
+		if( 'toplevel_page_wpcf7' == $hook_suffix && isset( $_GET['post'] ) && ! empty( $_GET['post'] )  )
+			return true;
+		
+		// Don't show in the add new page
+		if( 'contact_page_wpcf7-new' == $hook_suffix && isset( $_GET['locale'] ) )
+			return true;
+		
+		return false;
+	}		
 }

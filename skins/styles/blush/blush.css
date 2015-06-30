@@ -5,8 +5,8 @@
 * Author URI: http://cf7skins.com
 * Description: Named for its subtlety and soft colors, Blush will blend in with many themes, especially those with a similar color scheme.
 * Instructions:
-* Version: 1.01
-* Version Date: 2015-05-01
+* Version: 1.1
+* Version Date: 2015-05-20
 * License: GNU General Public License v2 or later
 * License URI: http://www.gnu.org/licenses/gpl-2.0.html
 * Tags: pink, white, gray, light
@@ -24,6 +24,7 @@
 * Submit Buttons
 * Special Classes
 * Ready Styles
+* Multi Styles
 */
 
 /** Import
@@ -84,8 +85,8 @@ NOTE: These items should be used to style the overall CF7 form
 .wpcf7 .cf7s-blush fieldset fieldset legend {
 }
 
-.wpcf7 .cf7s-blush fieldset fieldset input,
-.wpcf7 .cf7s-blush fieldset fieldset textarea {
+.wpcf7 .wpcf7-form.cf7skins.cf7s-blush fieldset fieldset input,
+.wpcf7 .wpcf7-form.cf7skins.cf7s-blush fieldset fieldset textarea {
 }
 
 /** Text Fields
@@ -98,26 +99,26 @@ NOTE: These items should be used to style the overall CF7 form
 	background: #fff;
 }
 
-.wpcf7 .cf7s-blush input[type="text"],
-.wpcf7 .cf7s-blush input[type="email"],
-.wpcf7 .cf7s-blush input[type="tel"],
-.wpcf7 .cf7s-blush input[type="url"],
-.wpcf7 .cf7s-blush input[type="number"],
-.wpcf7 .cf7s-blush input[type="range"],
-.wpcf7 .cf7s-blush input[type=date],
-.wpcf7 .cf7s-blush input[type=file] {
+.wpcf7 .wpcf7-form.cf7skins.cf7s-blush input[type="text"],
+.wpcf7 .wpcf7-form.cf7skins.cf7s-blush input[type="email"],
+.wpcf7 .wpcf7-form.cf7skins.cf7s-blush input[type="tel"],
+.wpcf7 .wpcf7-form.cf7skins.cf7s-blush input[type="url"],
+.wpcf7 .wpcf7-form.cf7skins.cf7s-blush input[type="number"],
+.wpcf7 .wpcf7-form.cf7skins.cf7s-blush input[type="range"],
+.wpcf7 .wpcf7-form.cf7skins.cf7s-blush input[type=date],
+.wpcf7 .wpcf7-form.cf7skins.cf7s-blush input[type=file] {
 }
 
-.wpcf7 .cf7s-blush input[type="text"] {
+.wpcf7 .wpcf7-form.cf7skins.cf7s-blush input[type="text"] {
 }
 
-.wpcf7 .cf7s-blush input[type="email"] {
+.wpcf7 .wpcf7-form.cf7skins.cf7s-blush input[type="email"] {
 }
 
-.wpcf7 .cf7s-blush input[type="tel"] {
+.wpcf7 .wpcf7-form.cf7skins.cf7s-blush input[type="tel"] {
 }
 
-.wpcf7 .cf7s-blush textarea {
+.wpcf7 .wpcf7-form.cf7skins.cf7s-blush textarea {
 	padding: 5px 7px;  /* deliberately different from Input */
 }
 
@@ -235,4 +236,102 @@ NOTE: Ready Styles are provided ready to be used in all CF7 forms
 }
 
 .wpcf7 .cf7s-blush .boxaround1 select {
+}
+
+/** Multi Styles
+NOTE: These styles provide styling for CF7 Skins Multi elements
+------------------------------------------------------------ */
+
+/* Multi Fixes */
+.wpcf7 .cf7s-blush.cf7multi {
+}
+
+.wpcf7 .cf7s-blush.cf7multi .etabs li {
+}
+
+/* Easytabs */
+.wpcf7 .cf7s-blush.cf7multi .tab-container {
+}
+
+.wpcf7 .cf7s-blush.cf7multi .etabs {
+}
+
+.wpcf7 .cf7s-blush.cf7multi .tab {
+	border: 1px solid #bb9393;
+	border-bottom: none;
+	background: #dcc7c6;
+}
+
+.wpcf7 .cf7s-blush.cf7multi .tab a {
+	color: #000;
+}
+
+.wpcf7 .cf7s-blush.cf7multi .tab.active {
+	background: #fff;
+}
+
+.wpcf7 .cf7s-blush.cf7multi .tab a.active {
+}
+
+.wpcf7 .cf7s-blush.cf7multi .epanels {
+	border: 1px solid #bb9393;
+}
+
+.wpcf7 .cf7s-blush.cf7multi .panel-container {
+}
+
+/* Navigation */
+.wpcf7 .cf7s-blush.cf7multi .navigation {
+}
+
+.wpcf7 .cf7s-blush.cf7multi .navigation .previous,
+.wpcf7 .cf7s-blush.cf7multi .navigation .next {
+	color: #fff;
+	border: 1px solid #bfbfbf;
+	background: #3b3b3b;
+}
+
+.wpcf7 .cf7s-blush.cf7multi .navigation .previous:hover,
+.wpcf7 .cf7s-blush.cf7multi .navigation .next:hover {
+	color: #dcc7c6;
+}
+
+/* Pagination */
+.wpcf7 .cf7s-blush.cf7multi .pagination {
+}
+
+/* Start & End Tabs */
+.wpcf7 .cf7s-blush.cf7multi .navigation .start,
+.wpcf7 .wpcf7-form.cf7skins.cf7s-blush.cf7multi .navigation .end {
+	font-size: 1.0em;
+	padding: 5px 10px;
+	color: #fff;
+	border: 1px solid #bfbfbf;
+	background: #3b3b3b;
+}
+
+.wpcf7 .cf7s-blush.cf7multi .navigation .start:hover,
+.wpcf7 .wpcf7-form.cf7skins.cf7s-blush.cf7multi .navigation .end:hover {
+	color: #dcc7c6;
+}
+
+.wpcf7 .wpcf7-form.cf7skins.cf7s-blush.cf7multi .navigation .end {
+}
+
+.wpcf7 .wpcf7-form.cf7skins.cf7s-blush.cf7multi .navigation .end:hover {
+}
+
+/* Progress Bar */
+.wpcf7 .cf7s-blush.cf7multi .cf7m-progress {
+	border: 1px solid #bb9393;
+	background: #dcc7c6;
+}
+
+.wpcf7 .cf7s-blush.cf7multi .cf7m-progress div {
+	border-radius: 3px 0 0 3px;
+	background: #3b3b3b;
+}
+
+/* Thank You Tab */
+.wpcf7 .cf7s-blush.cf7multi .cf7m-thanks {
 }

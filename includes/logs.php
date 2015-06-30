@@ -133,15 +133,21 @@ class CF7_Skins_Log {
      * @since 0.5.0
      */
 	function page_init() {
-		$array = array( 'cf7skins', 'cf7skinspro', 'cf7skinsready' );
 		$logs = get_option( 'cf7skins_activation' );
 		
-		foreach( $array as $k ) {
-			if( isset( $_POST[$k.'_delete_status'] ) ) {
+		foreach( $_POST as $key => $value ) {
+			
+			// Check if user push the delete status 
+			if ( strpos( $key, '_delete_status' ) !== false ) {
+				
+				// Explode and get the first text
+				$pieces = explode( '_', $key ); 
+				$k = $pieces[0];
+				
 				unset( $logs[$k] );	// delete selected plugin log
 				update_option( 'cf7skins_activation', $logs ); // update the activation log
 				delete_option( $k.'_license_status' ); // delete the plugin license status
-			}
+			}			
 		}
     }
 	
@@ -174,6 +180,6 @@ class CF7_Skins_Log {
 			 		
 } // End class
 
-$option = get_option( CF7SKINS_SLUG );
+$option = get_option( CF7SKINS_OPTIONS );
 if( isset( $option['display_log'] ) && $option['display_log'] )	
 	new CF7_Skins_Log(); // Create new instance

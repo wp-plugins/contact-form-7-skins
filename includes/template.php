@@ -428,7 +428,7 @@ class CF7_Skin_Template extends CF7_Skin {
 				</div>			
 				<div class="block-details"><div>
 					<ul class="clearfix skin-action">
-						<li><a class="balloon view" data-value="<?php $this->get_slug_name( $template ); ?>" href="#cf7s-template" title="<?php _e( 'Use Expanded View to view template features - shows layout, description & usage details.', $this->textdomain ); ?>"><?php _e('Expanded View', $this->textdomain ); ?></a></li>
+						<li><a class="balloon view" data-value="<?php $this->get_slug_name( $template ); ?>" href="#cf7s-template" title="<?php _e( 'Use Expanded View to view Template features - shows layout, description & usage details.', $this->textdomain ); ?>"><?php _e('Expanded View', $this->textdomain ); ?></a></li>
 						<li><a class="balloon select<?php echo $class; ?>" data-value="<?php $this->get_slug_name( $template ); ?>" href="#cf7s-template" title="<?php _e( 'Select to apply the Template to your form - appears in the Form Editing area, where you can edit to your requirements.', $this->textdomain ); ?>"><?php echo $select_text; ?></a></li>
 						<li><a class="balloon close" href="#" title="<?php _e( 'Return to Template Gallery/Grid view.', $this->textdomain ); ?>"><?php _e('Close', $this->textdomain ); ?></a></li>
 					</ul>

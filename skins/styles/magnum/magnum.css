@@ -5,8 +5,8 @@
 * Author URI: http://cf7skins.com
 * Description:  Magnum is bound to stand out with its stylish use of bright colors. While it will work best on pages with a similar color palette, it will also tie in well with many others due to its bright colors and detail.
 * Instructions:
-* Version: 1.01
-* Version Date: 2015-05-01
+* Version: 1.1
+* Version Date: 2015-05-20
 * License: GNU General Public License v2 or later
 * License URI: http://www.gnu.org/licenses/gpl-2.0.html
 * Tags: green, purple, white, light
@@ -24,6 +24,7 @@
 * Submit Buttons
 * Special Classes
 * Ready Styles
+* Multi Styles
 */
 
 /** Import
@@ -91,8 +92,8 @@ NOTE: These items should be used to style the overall CF7 form
 .wpcf7 .cf7s-magnum fieldset fieldset legend {
 }
 
-.wpcf7 .cf7s-magnum fieldset fieldset input, 
-.wpcf7 .cf7s-magnum fieldset fieldset textarea {
+.wpcf7 .wpcf7-form.cf7skins.cf7s-magnum fieldset fieldset input, 
+.wpcf7 .wpcf7-form.cf7skins.cf7s-magnum fieldset fieldset textarea {
 }
 
 /** Text Fields
@@ -106,26 +107,26 @@ NOTE: These items should be used to style the overall CF7 form
 	background: #b1e8d7;
 }
 
-.wpcf7 .cf7s-magnum input[type="text"],
-.wpcf7 .cf7s-magnum input[type="email"],
-.wpcf7 .cf7s-magnum input[type="tel"],
-.wpcf7 .cf7s-magnum input[type="url"],
-.wpcf7 .cf7s-magnum input[type="number"],
-.wpcf7 .cf7s-magnum input[type="range"],
-.wpcf7 .cf7s-magnum input[type=date],
-.wpcf7 .cf7s-magnum input[type=file] {
+.wpcf7 .wpcf7-form.cf7skins.cf7s-magnum input[type="text"],
+.wpcf7 .wpcf7-form.cf7skins.cf7s-magnum input[type="email"],
+.wpcf7 .wpcf7-form.cf7skins.cf7s-magnum input[type="tel"],
+.wpcf7 .wpcf7-form.cf7skins.cf7s-magnum input[type="url"],
+.wpcf7 .wpcf7-form.cf7skins.cf7s-magnum input[type="number"],
+.wpcf7 .wpcf7-form.cf7skins.cf7s-magnum input[type="range"],
+.wpcf7 .wpcf7-form.cf7skins.cf7s-magnum input[type=date],
+.wpcf7 .wpcf7-form.cf7skins.cf7s-magnum input[type=file] {
 }
 
-.wpcf7 .cf7s-magnum input[type="text"] {
+.wpcf7 .wpcf7-form.cf7skins.cf7s-magnum input[type="text"] {
 }
 
-.wpcf7 .cf7s-magnum input[type="email"] {
+.wpcf7 .wpcf7-form.cf7skins.cf7s-magnum input[type="email"] {
 }
 
-.wpcf7 .cf7s-magnum input[type="tel"] {
+.wpcf7 .wpcf7-form.cf7skins.cf7s-magnum input[type="tel"] {
 }
 
-.wpcf7 .cf7s-magnum textarea {
+.wpcf7 .wpcf7-form.cf7skins.cf7s-magnum textarea {
 	padding: 5px 7px;  /* deliberately different from Input */
 }
 
@@ -196,9 +197,9 @@ NOTE: These are the CSS selectors that should be used to style Submit Buttons wi
 .wpcf7 .wpcf7-form.cf7skins.cf7s-magnum input[type="submit"] {
 	font-size: 1.2em;
 	padding: 5px 15px;
-	background: #89d9c0;
 	color: #fff;
 	border: none;
+	background: #89d9c0;
 }
 
 .wpcf7 .wpcf7-form.cf7skins.cf7s-magnum input[type="submit"]:hover {
@@ -249,4 +250,101 @@ NOTE: Ready Styles are provided ready to be used in all CF7 forms
 }
 
 .wpcf7 .cf7s-magnum .boxaround1 select {
+}
+
+/** Multi Styles
+NOTE: These styles provide styling for CF7 Skins Multi elements
+------------------------------------------------------------ */
+
+/* Multi Fixes */
+.wpcf7 .cf7s-magnum.cf7multi {
+}
+
+.wpcf7 .cf7s-magnum.cf7multi .etabs li {
+}
+
+/* Easytabs */
+.wpcf7 .cf7s-magnum.cf7multi .tab-container {
+}
+
+.wpcf7 .cf7s-magnum.cf7multi .etabs {
+}
+
+.wpcf7 .cf7s-magnum.cf7multi .tab {
+	border: 1px solid #bdc2fd;
+	border-bottom: none;
+	background: #bdc2fd;
+}
+
+.wpcf7 .cf7s-magnum.cf7multi .tab a {
+	color: #fff;  /* WAS color: #838ada; */ 
+}
+
+.wpcf7 .cf7s-magnum.cf7multi .tab.active {
+	background: #fff;
+}
+
+.wpcf7 .cf7s-magnum.cf7multi .tab a.active {
+	color: #838ada;
+}
+
+.wpcf7 .cf7s-magnum.cf7multi .epanels {
+	border: 1px solid #bdc2fd;
+}
+
+.wpcf7 .cf7s-magnum.cf7multi .panel-container {
+}
+
+/* Navigation */
+.wpcf7 .cf7s-magnum.cf7multi .navigation {
+}
+
+.wpcf7 .cf7s-magnum.cf7multi .navigation .previous,
+.wpcf7 .cf7s-magnum.cf7multi .navigation .next {
+	color: #fff;
+	border: none;
+	background: #89d9c0;
+}
+
+.wpcf7 .cf7s-magnum.cf7multi .navigation .previous:hover,
+.wpcf7 .cf7s-magnum.cf7multi .navigation .next:hover {
+}
+
+/* Pagination */
+.wpcf7 .cf7s-magnum.cf7multi .pagination {
+}
+
+/* Start & End Tabs */
+.wpcf7 .cf7s-magnum.cf7multi .navigation .start,
+.wpcf7 .wpcf7-form.cf7skins.cf7s-magnum.cf7multi .navigation .end {
+	font-size: 1.0em;
+	padding: 5px 10px;
+	color: #fff;
+	border: none;
+	background: #89d9c0;
+}
+
+.wpcf7 .cf7s-magnum.cf7multi .navigation .start:hover,
+.wpcf7 .wpcf7-form.cf7skins.cf7s-magnum.cf7multi .navigation .end:hover {
+	color: #000;
+}
+
+.wpcf7 .wpcf7-form.cf7skins.cf7s-magnum.cf7multi .navigation .end {
+}
+
+.wpcf7 .wpcf7-form.cf7skins.cf7s-magnum.cf7multi .navigation .end:hover {
+}
+
+/* Progress Bar */
+.wpcf7 .cf7s-magnum.cf7multi .cf7m-progress {
+	border: 1px solid #bdc2fd;
+	background: #fff;
+}
+
+.wpcf7 .cf7s-magnum.cf7multi .cf7m-progress div {
+	background: #89d9c0;
+}
+
+/* Thank You Tab */
+.wpcf7 .cf7s-magnum.cf7multi .cf7m-thanks {
 }
