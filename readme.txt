@@ -1,8 +1,8 @@
-=== Contact Form 7 Skins ===
+﻿=== Contact Form 7 Skins ===
 Contributors: buzztone
 Tags: contact form 7, form, skin, template, style, html, css
 Requires at least: 4.1
-Tested up to: 4.2.2
+Tested up to: 4.3
 Stable tag: 1.1
 Author URI: http://cf7skins.com
 License: GPLv2 or later
